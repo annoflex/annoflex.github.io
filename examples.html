@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This page contains examples for AnnoFlex-based scanners.">
+        <meta name="keywords" content="examples, hello world example, tutorial, java scanner, regular expression scanner, annoflex, scanner, lexer, generator, java, annotations">
+        <meta name="author" content="Stefan Czaska">
+        <title>AnnoFlex - Examples</title>
+        <link href="css/annoflex.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">AnnoFlex</a></li>
+                    <li class="selected"><a href="examples.html">Examples</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="license.html">License</a></li>
+                    <li><a href="source-code.html">Source Code</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Hello World Example</h1>
+<code>/**
+ * This is a simple scanner written with AnnoFlex.
+ */
+public class MyScanner {
+    
+    /** @expr "Hello World" */ String createToken() { return "Hello World"; }
+    
+    //%%LEX-MAIN-START%%
+    
+    // This is the code area into which the code is generated.
+    
+    //%%LEX-MAIN-END%%
+}
+</code>
+            <h1>Tutorial</h1>
+            <p>AnnoFlex provides for beginners a simple and short tutorial consisting of three parts each in the
+            form of a scanner. Part one starts with a minimal scanner definition which shows how a scanner
+            definition is structured in principle. Part two is based on part one and additionally contains the
+            generated code of the scanner. Part three shows how this code can be customized. All tutorial scanners
+            can be found in the "examples" folder of the repository:</p>
+            <p>Examples: <a href="https://github.com/annoflex/annoflex/tree/master/examples">https://github.com/annoflex/annoflex/tree/master/examples</a></p>
+            <p>You can also use the following direct links:</p>
+            <p>TutorialPart1: <a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart1.java">https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart1.java</a></p>
+            <p>TutorialPart2: <a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart2.java">https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart2.java</a></p>
+            <p>TutorialPart3: <a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart3.java">https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart3.java</a></p>
+            <h1>Scanners used by AnnoFlex</h1>
+            <p>AnnoFlex uses its own parsers for Java source code files and regular expressions. The scanners of
+            both parsers are written with AnnoFlex and thus well-suited for the use as examples.</p>
+            <h2>Java Source Code Scanner</h2>
+            <p>The JavaScanner is used by AnnoFlex to scan Java source code files. It is a very simple scanner which
+            mainly consists of lexical rules for keywords and special symbols. Only comments and literals step out of
+            line and are more difficult to understand.</p>
+            <p>JavaScanner: <a href="https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/jdt/parser/JavaScanner.java">https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/jdt/parser/JavaScanner.java</a></p>
+            <h2>Regular Expression Scanner</h2>
+            <p>The RegExScanner
+            is used by AnnoFlex to scan regular expressions. This scanner makes use of lexical states and state stacks. It is a good reference if you
+            want to investigate how this technique works.</p>
+            <p>RegExScanner: <a href="https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/regex/parser/RegExScanner.java">https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/regex/parser/RegExScanner.java</a></p>
+        </main>
+        <footer>
+            <p>© 2018 Stefan Czaska. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
