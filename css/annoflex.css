@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 body {
-    margin: 0 auto; /* center body */
-    max-width: 980px; /* make content readable */
-    overflow-y: scroll; /* make layout independent of scrollbar*/
+    margin: 0 auto;
+    max-width: 980px;
+    overflow-y: scroll;
     padding: 0 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f7f7f7;
+    color: rgba(63,63,63);
 }
 header {
     margin-top: 0.5rem;
     line-height: 0;
     border: 1px solid rgba(34,36,38,0.15);
     border-radius: 0.2857rem;
-    box-shadow: 0 1px 2px 0 rgba(34,36,38,0.15);
     background-image: linear-gradient(rgb(255,255,255),rgb(242,242,242));
     overflow: hidden;
 }
@@ -50,4 +51,28 @@ code {
     display: block;
     font-family: monospace;
     white-space: pre;
+    border: solid #cccccc 1px;
+    border-radius: 0.2857rem;
+    background-color: white;
+    padding: 0.5em;
+}
+.license {
+    border: solid #cccccc 1px;
+    border-radius: 0.2857rem;
+    background-color: white;
+    padding: 0.5em;
+    color: black;
+}
+/* Java syntax highlighting */
+.javaBaseColor {
+    color: black;
+}
+.javaLineComment {
+    color: #007F00;
+}
+.javaDocComment {
+    color: #007F00;
+}
+.javaKeyword {
+    color: #0000FF;
 }
