@@ -25,6 +25,7 @@
         </header>
         <main>
             <h1>Hello World Example</h1>
+            <div class="clearfix">
 <code class="javaBaseColor"><span class="javaDocComment">/**
  * This is a simple scanner written with AnnoFlex.
  */</span>
@@ -39,17 +40,16 @@
     <span class="javaLineComment">//%%LEX-MAIN-END%%</span>
 }
 </code>
+            </div>
             <h1>Tutorial</h1>
             <p>AnnoFlex provides for beginners a simple and short tutorial consisting of three parts each in the
             form of a scanner. Part one starts with a minimal scanner definition which shows how a scanner
             definition is structured in principle. Part two is based on part one and additionally contains the
             generated code of the scanner. Part three shows how this code can be customized. All tutorial scanners
-            can be found in the "examples" folder of the repository:</p>
-            <p>Examples: <a href="https://github.com/annoflex/annoflex/tree/master/examples">https://github.com/annoflex/annoflex/tree/master/examples</a></p>
-            <p>You can also use the following direct links:</p>
-            <p>TutorialPart1: <a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart1.java">https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart1.java</a></p>
-            <p>TutorialPart2: <a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart2.java">https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart2.java</a></p>
-            <p>TutorialPart3: <a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart3.java">https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart3.java</a></p>
+            can be found in the "examples" folder of the repository.</p>
+            <p class="centered"><a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart1.java" class="linkButton">Tutorial Part 1</a>
+            <a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart2.java" class="linkButton">Tutorial Part 2</a>
+            <a href="https://github.com/annoflex/annoflex/blob/master/examples/TutorialPart3.java" class="linkButton">Tutorial Part 3</a></p>
             <h1>Scanners used by AnnoFlex</h1>
             <p>AnnoFlex uses its own parsers for Java source code files and regular expressions. The scanners of
             both parsers are written with AnnoFlex and thus well-suited for the use as examples.</p>
@@ -57,12 +57,12 @@
             <p>The JavaScanner is used by AnnoFlex to scan Java source code files. It is a very simple scanner which
             mainly consists of lexical rules for keywords and special symbols. Only comments and literals step out of
             line and are more difficult to understand.</p>
-            <p>JavaScanner: <a href="https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/jdt/parser/JavaScanner.java">https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/jdt/parser/JavaScanner.java</a></p>
+            <p class="centered"><a href="https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/jdt/parser/JavaScanner.java" class="linkButton">Java Scanner</a></p>
             <h2>Regular Expression Scanner</h2>
             <p>The RegExScanner
             is used by AnnoFlex to scan regular expressions. This scanner makes use of lexical states and state stacks. It is a good reference if you
             want to investigate how this technique works.</p>
-            <p>RegExScanner: <a href="https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/regex/parser/RegExScanner.java">https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/regex/parser/RegExScanner.java</a></p>
+            <p class="centered"><a href="https://github.com/annoflex/annoflex/blob/master/source/org/annoflex/regex/parser/RegExScanner.java" class="linkButton">RegEx Scanner</a></p>
         </main>
         <footer>
             <p>© 2018 Stefan Czaska. All rights reserved.</p>
