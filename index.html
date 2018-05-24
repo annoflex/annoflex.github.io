@@ -24,20 +24,19 @@
             </nav>
         </header>
         <main>
-            <h1>AnnoFlex</h1>
-            <p>AnnoFlex is an annotation-based code generator for lexical scanners. It uses Java source code files and AnnoFlex-specific Javadoc tags as annotations in order to express lexical rules. Javadoc tags are used to circumvent double escaping in regular expressions as it occurs in Strings of common Java annotations. AnnoFlex is a fast code generator which creates fast lexical scanners. It provides a lot of sophisticated features, is easy to use and has several major advantages compared with classical code generators.</p>
-            <h1>Features</h1>
-            <p>Although AnnoFlex is a young tool, it provides a lot of functionalities. Of particular interest are the following:</p>
+            <h1>Introduction</h1>
+            <p>AnnoFlex is an <b>annotation-based</b> code generator for lexical scanners. It uses <b>Java</b> as the main language for the scanner definition and custom <b>Javadoc tags</b> to annotate methods with regular expressions. Javadoc tags are used to circumvent double escaping as it occurs in common Java annotations. AnnoFlex is a fast code generator which creates fast lexical scanners. It provides a lot of sophisticated features, is easy to use and has significant advantages over classical code generators.</p>
+            <h1>Highlights</h1>
             <ul>
-                <li>String and Reader input mode</li>
+                <li><b>String</b> and <b>Reader</b> input mode</li>
+                <li>Extensive <b>code customization</b></li>
                 <li>Large number of regular expressions</li>
-                <li>Extensive code customization</li>
-                <li>Very fast code generation</li>
-                <li>Global and local macros</li>
-                <li>Unicode character properties</li>
+                <li>Unicode <b>character properties</b></li>
+                <li><b>Global</b> and <b>local</b> macros</li>
+                <li>Lightning-fast code generation</li>
             </ul>
             <h1>Advantages</h1>
-            <p>As AnnoFlex uses a Java source code file as the base format for the scanner definition it is possible to use all features of your favorite IDE for the entire code of your scanner - out of the box, without any plugins and without any restrictions. This especially includes, but is not limited to, the following features:</p>
+            <p>Due to the fact that AnnoFlex uses Java source code files as the base for the scanner definition, it possible to use <b>all features of your favorite IDE</b> for the entire code of your scanner - <b>out of the box</b>, without any plugins and without any restrictions. This includes, but is not limited to, the following features:</p>
             <ul>
                 <li>Syntax highlighting</li>
                 <li>Refactoring</li>
@@ -49,7 +48,7 @@
             The main reason for that is that the code of a scanner is not just a collection of plain-text snippets that are
             assembled by the code generator to a compilable class. Instead, the scanner is directly written in Java and only
             critical parts of the lexical analysis are added by the code generator. Because of this the code of an
-            AnnoFlex-based scanner feels like real and modern code and not like unusable plain text. Try it out and feel the
+            AnnoFlex-based scanner feels like real code and not like unusable plain text. Try it out and feel the
             difference.</p>
         </main>
         <footer>
